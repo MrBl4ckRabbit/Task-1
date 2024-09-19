@@ -33,11 +33,9 @@ public class Util {
 
 
     public static SessionFactory getSessionFactory() {
-        SessionFactory sessionFactory = null;
-        if (sessionFactory == null) {
-            Configuration configuration = new Configuration().addAnnotatedClass(User.class);
-            sessionFactory = configuration.buildSessionFactory();
-        }
+        SessionFactory sessionFactory;
+        Configuration configuration = new Configuration().addAnnotatedClass(User.class);
+        sessionFactory = configuration.buildSessionFactory();
         return sessionFactory;
     }
 }

@@ -33,7 +33,7 @@ public class Main {
         List<User> users = userService.getAllUsers();
         users.forEach(System.out::println);
 
-      userService.cleanUsersTable();
+     userService.cleanUsersTable();
       userService.dropUsersTable();
 
 
